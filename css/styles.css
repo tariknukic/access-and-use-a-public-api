@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Styling of the directory */
+body {
+    margin-top: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    background: rgb(241, 241, 241);
+}
+
+h1 {
+    text-align: left;
+    margin: 0 40px;
+    padding: 0 40px;
+    color: rgb(136, 135, 135);
+}
+
+.grid-container {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    align-self: center;
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+    background: rgb(250, 248, 248);
+    border: 1px solid rgb(189, 187, 187);
+    border-radius: 5px;
+}
+
+.card img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.card div {
+    font-weight: 200;
+}
+
+
+/* Styling of the modal window */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.8);
+}
+
+.modal {
+    width: 375px;
+    margin: 15px auto auto;
+    padding: 20px;
+    border: 1px solid #778;
+    border-radius: 5px;
+    text-align: center;
+    background: #fff;
+    position: relative;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* media queries for wider screen sizes */
+@media (min-width: 768px) {
+    .grid-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 40%;
+        display: flex;
+    }
+
+    .card img {
+        width: 30%;
+        height: 30%;
+        margin-right: 10px; 
+        align-self: center;
+    }
+    
+    .card div {
+        width: 40%;
+        margin-left: 10px;
+        flex-grow: 4;
+    }
+
+    .card .name {
+        font-size: medium;
+        text-align: left;
+    }
+
+    .card .email,
+    .card .address {
+        font-size: small;
+        text-align: left;
+        margin: 5px 0;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    .card {
+        width: 30%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
